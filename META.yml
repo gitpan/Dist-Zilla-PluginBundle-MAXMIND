@@ -24,7 +24,7 @@ no_index:
 provides:
   Dist::Zilla::PluginBundle::MAXMIND:
     file: lib/Dist/Zilla/PluginBundle/MAXMIND.pm
-    version: '0.01'
+    version: '0.02'
 requires:
   Dist::Zilla: '0'
   Dist::Zilla::File::InMemory: '0'
@@ -33,7 +33,6 @@ requires:
   Dist::Zilla::Plugin::CPANFile: '0'
   Dist::Zilla::Plugin::CheckPrereqsIndexed: '0'
   Dist::Zilla::Plugin::CopyFilesFromBuild: '0'
-  Dist::Zilla::Plugin::EOLTests: '0'
   Dist::Zilla::Plugin::Git::Check: '0'
   Dist::Zilla::Plugin::Git::CheckFor::MergeConflicts: '0'
   Dist::Zilla::Plugin::Git::Commit: '0'
@@ -59,10 +58,9 @@ requires:
   Dist::Zilla::Plugin::SurgicalPodWeaver: '0'
   Dist::Zilla::Plugin::Test::CPAN::Changes: '0'
   Dist::Zilla::Plugin::Test::Compile: '0'
+  Dist::Zilla::Plugin::Test::EOL: '0.14'
   Dist::Zilla::Plugin::Test::NoTabs: '0'
   Dist::Zilla::Plugin::Test::Pod::Coverage::Configurable: '0'
-  Dist::Zilla::Plugin::Test::Pod::LinkCheck: '0'
-  Dist::Zilla::Plugin::Test::Pod::No404s: '0'
   Dist::Zilla::Plugin::Test::PodSpelling: '0'
   Dist::Zilla::Plugin::Test::Portability: '0'
   Dist::Zilla::Plugin::Test::ReportPrereqs: '0'
@@ -81,8 +79,9 @@ requires:
   warnings: '0'
 resources:
   bugtracker: https://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND/issues
+  homepage: http://metacpan.org/release/Dist-Zilla-PluginBundle-MAXMIND/
   repository: git://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND.git
-version: '0.01'
+version: '0.02'
 x_Dist_Zilla:
   perl:
     version: '5.016003'
@@ -272,11 +271,11 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::MAXMIND::Contributors
       name: '@MAXMIND/MAXMIND::Contributors'
-      version: ~
+      version: '0.01'
     -
       class: Dist::Zilla::Plugin::MAXMIND::License
       name: '@MAXMIND/MAXMIND::License'
-      version: ~
+      version: '0.01'
     -
       class: Dist::Zilla::Plugin::Meta::Contributors
       name: '@MAXMIND/Meta::Contributors'
@@ -357,8 +356,11 @@ x_Dist_Zilla:
       version: '0.0021'
     -
       class: Dist::Zilla::Plugin::EOLTests
+      config:
+        Dist::Zilla::Plugin::Test::EOL:
+          filename: xt/release/eol.t
       name: '@MAXMIND/EOLTests'
-      version: '0.13'
+      version: '0.14'
     -
       class: Dist::Zilla::Plugin::PodSyntaxTests
       name: '@MAXMIND/PodSyntaxTests'
@@ -457,7 +459,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: v0.01
+          tag: v0.02
           tag_format: v%v
           tag_message: v%v
           time_zone: local

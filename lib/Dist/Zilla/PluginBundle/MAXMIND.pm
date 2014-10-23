@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::MAXMIND;
-# git description: f9c710b
-$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.01';
+# git description: v0.01-3-g8b369e8
+$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.02';
 
 use v5.10;
 
@@ -19,7 +19,6 @@ use Dist::Zilla::Plugin::AutoPrereqs;
 use Dist::Zilla::Plugin::CPANFile;
 use Dist::Zilla::Plugin::CheckPrereqsIndexed;
 use Dist::Zilla::Plugin::CopyFilesFromBuild;
-use Dist::Zilla::Plugin::EOLTests;
 use Dist::Zilla::Plugin::Git::Check;
 use Dist::Zilla::Plugin::Git::CheckFor::MergeConflicts;
 use Dist::Zilla::Plugin::Git::Commit;
@@ -47,10 +46,9 @@ use Dist::Zilla::Plugin::ReadmeAnyFromPod;
 use Dist::Zilla::Plugin::SurgicalPodWeaver;
 use Dist::Zilla::Plugin::Test::CPAN::Changes;
 use Dist::Zilla::Plugin::Test::Compile;
+use Dist::Zilla::Plugin::Test::EOL 0.14;
 use Dist::Zilla::Plugin::Test::NoTabs;
 use Dist::Zilla::Plugin::Test::Pod::Coverage::Configurable;
-use Dist::Zilla::Plugin::Test::Pod::LinkCheck;
-use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
 use Dist::Zilla::Plugin::Test::ReportPrereqs;
@@ -326,13 +324,11 @@ sub _build_plugins {
             SurgicalPodWeaver
             ),
         qw(
-            EOLTests
             PodSyntaxTests
             Test::CPAN::Changes
             Test::Compile
+            Test::EOL
             Test::NoTabs
-            Test::Pod::LinkCheck
-            Test::Pod::No404s
             Test::Portability
             Test::Synopsis
             ),
@@ -401,7 +397,7 @@ Dist::Zilla::PluginBundle::MAXMIND - MaxMind's plugin bundle
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =for Pod::Coverage .*
 

@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::MAXMIND::License;
-$Dist::Zilla::Plugin::MAXMIND::License::VERSION = '0.01';
+$Dist::Zilla::Plugin::MAXMIND::License::VERSION = '0.02';
 use v5.10;
 
 use strict;
