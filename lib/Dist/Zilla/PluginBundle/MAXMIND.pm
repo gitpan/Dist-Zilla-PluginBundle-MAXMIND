@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::MAXMIND;
-# git description: v0.01-3-g8b369e8
-$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.02';
+# git description: v0.02-2-gf253723
+$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.03';
 
 use v5.10;
 
@@ -277,6 +277,10 @@ sub _build_plugins {
                 phase             => 'release',
                 check_all_plugins => 1,
                 check_all_prereqs => 1,
+                skip              => [
+                    'Dist::Zilla::Plugin::MAXMIND::Contributors',
+                    'Dist::Zilla::Plugin::MAXMIND::License',
+                ],
             }
         ],
         [
@@ -397,7 +401,7 @@ Dist::Zilla::PluginBundle::MAXMIND - MaxMind's plugin bundle
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =for Pod::Coverage .*
 
