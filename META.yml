@@ -13,7 +13,7 @@ configure_requires:
   ExtUtils::MakeMaker: '0'
   perl: v5.10.0
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690'
+generated_by: 'Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,7 +26,7 @@ no_index:
 provides:
   Dist::Zilla::PluginBundle::MAXMIND:
     file: lib/Dist/Zilla/PluginBundle/MAXMIND.pm
-    version: '0.03'
+    version: '0.04'
 requires:
   Dist::Zilla: '0'
   Dist::Zilla::File::InMemory: '0'
@@ -83,7 +83,7 @@ resources:
   bugtracker: https://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND/issues
   homepage: http://metacpan.org/release/Dist-Zilla-PluginBundle-MAXMIND/
   repository: git://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND.git
-version: '0.03'
+version: '0.04'
 x_Dist_Zilla:
   perl:
     version: '5.016003'
@@ -94,7 +94,7 @@ x_Dist_Zilla:
         Dist::Zilla::Role::TestRunner:
           default_jobs: 1
       name: '@MAXMIND/MakeMaker'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::Authority
       name: '@MAXMIND/Authority'
@@ -102,7 +102,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: '@MAXMIND/AutoPrereqs'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::CopyFilesFromBuild
       name: '@MAXMIND/CopyFilesFromBuild'
@@ -123,7 +123,7 @@ x_Dist_Zilla:
           prune_directory: []
           root: .
       name: '@MAXMIND/GatherDir'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::GitHub::Meta
       name: '@MAXMIND/GitHub::Meta'
@@ -140,7 +140,7 @@ x_Dist_Zilla:
             -
               class: Dist::Zilla::Plugin::FinderCode
               name: '@MAXMIND/MetaProvides::Package/AUTOVIV/:InstallModulesPM'
-              version: '5.023'
+              version: '5.025'
         Dist::Zilla::Role::MetaProvider::Provider:
           inherit_missing: '1'
           inherit_version: '1'
@@ -150,7 +150,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::NextRelease
       name: '@MAXMIND/NextRelease'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::Test::PodSpelling
       name: '@MAXMIND/Test::PodSpelling'
@@ -166,7 +166,7 @@ x_Dist_Zilla:
           phase: test
           type: requires
       name: '@MAXMIND/TestMoreDoneTesting'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::PromptIfStale
       config:
@@ -179,7 +179,7 @@ x_Dist_Zilla:
             - Dist::Zilla::Plugin::MAXMIND::Contributors
             - Dist::Zilla::Plugin::MAXMIND::License
       name: '@MAXMIND/stale modules, release'
-      version: '0.028'
+      version: '0.029'
     -
       class: Dist::Zilla::Plugin::ReadmeAnyFromPod
       name: '@MAXMIND/ReadmeMarkdownInBuild'
@@ -191,47 +191,47 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@MAXMIND/UploadToCPAN'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::PruneCruft
       name: '@MAXMIND/PruneCruft'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::ManifestSkip
       name: '@MAXMIND/ManifestSkip'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::MetaYAML
       name: '@MAXMIND/MetaYAML'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::License
       name: '@MAXMIND/License'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::ExtraTests
       name: '@MAXMIND/ExtraTests'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::ExecDir
       name: '@MAXMIND/ExecDir'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::ShareDir
       name: '@MAXMIND/ShareDir'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::Manifest
       name: '@MAXMIND/Manifest'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::TestRelease
       name: '@MAXMIND/TestRelease'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::ConfirmRelease
       name: '@MAXMIND/ConfirmRelease'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::CheckPrereqsIndexed
       name: '@MAXMIND/CheckPrereqsIndexed'
@@ -239,7 +239,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::CPANFile
       name: '@MAXMIND/CPANFile'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch
       config:
@@ -287,11 +287,11 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::MetaConfig
       name: '@MAXMIND/MetaConfig'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::MetaJSON
       name: '@MAXMIND/MetaJSON'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::MinimumPerl
       name: '@MAXMIND/MinimumPerl'
@@ -299,7 +299,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::PkgVersion
       name: '@MAXMIND/PkgVersion'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::SurgicalPodWeaver
       config:
@@ -311,43 +311,43 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Plugin::EnsurePod5
               name: '@CorePrep/EnsurePod5'
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Plugin::H1Nester
               name: '@CorePrep/H1Nester'
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Name
               name: Name
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Version
               name: Version
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Region
               name: prelude
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Generic
               name: SYNOPSIS
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Generic
               name: DESCRIPTION
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Leftovers
               name: Leftovers
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Region
               name: postlude
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Authors
               name: Authors
-              version: '4.006'
+              version: '4.008'
             -
               class: Pod::Weaver::Section::Contributors
               name: Contributors
@@ -355,13 +355,13 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Section::Legal
               name: Legal
-              version: '4.006'
+              version: '4.008'
       name: '@MAXMIND/SurgicalPodWeaver'
-      version: '0.0021'
+      version: '0.0023'
     -
       class: Dist::Zilla::Plugin::PodSyntaxTests
       name: '@MAXMIND/PodSyntaxTests'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::Test::CPAN::Changes
       name: '@MAXMIND/Test::CPAN::Changes'
@@ -416,6 +416,7 @@ x_Dist_Zilla:
           untracked_files: die
         Dist::Zilla::Role::Git::DirtyFiles:
           allow_dirty:
+            - .mailmap
             - Changes
             - cpanfile
             - CONTRIBUTING.md
@@ -437,6 +438,7 @@ x_Dist_Zilla:
           time_zone: local
         Dist::Zilla::Role::Git::DirtyFiles:
           allow_dirty:
+            - .mailmap
             - Changes
             - cpanfile
             - CONTRIBUTING.md
@@ -455,7 +457,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: v0.03
+          tag: v0.04
           tag_format: v%v
           tag_message: v%v
           time_zone: local
@@ -477,46 +479,46 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::MetaNoIndex
       name: MetaNoIndex
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':IncModules'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':TestFiles'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':ExecFiles'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':ShareFiles'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':MainModule'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':AllFiles'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':NoFiles'
-      version: '5.023'
+      version: '5.025'
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: '@MAXMIND/MetaProvides::Package/AUTOVIV/:InstallModulesPM'
-      version: '5.023'
+      version: '5.025'
   zilla:
     class: Dist::Zilla::Dist::Builder
     config:
       is_trial: '0'
-    version: '5.023'
+    version: '5.025'
 x_authority: cpan:MAXMIND

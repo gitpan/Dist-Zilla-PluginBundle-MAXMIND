@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::MAXMIND;
-# git description: v0.02-2-gf253723
-$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.03';
+# git description: v0.03-4-ga276262
+$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.04';
 
 use v5.10;
 
@@ -180,6 +180,7 @@ sub _build_plugins {
     my $self = shift;
 
     my @allow_dirty = qw(
+        .mailmap
         Changes
         cpanfile
         CONTRIBUTING.md
@@ -401,7 +402,7 @@ Dist::Zilla::PluginBundle::MAXMIND - MaxMind's plugin bundle
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =for Pod::Coverage .*
 
