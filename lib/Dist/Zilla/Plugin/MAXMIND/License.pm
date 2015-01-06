@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::MAXMIND::License;
-$Dist::Zilla::Plugin::MAXMIND::License::VERSION = '0.04';
+$Dist::Zilla::Plugin::MAXMIND::License::VERSION = '0.05';
 use v5.10;
 
 use strict;
@@ -22,7 +22,7 @@ sub provide_license {
 
     return Software::License::Perl_5->new(
         {
-            holder => 'MaxMind, Inc.',
+            holder => $args->{copyright_holder} || 'MaxMind, Inc.',
             year => $years,
         },
     );

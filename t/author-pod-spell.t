@@ -30,12 +30,11 @@ Rolsky
 Rolsky's
 Dave
 drolsky
-Inc
 lib
 Dist
 Zilla
-PluginBundle
-MAXMIND
 Plugin
-License
+MAXMIND
 Contributors
+License
+PluginBundle
