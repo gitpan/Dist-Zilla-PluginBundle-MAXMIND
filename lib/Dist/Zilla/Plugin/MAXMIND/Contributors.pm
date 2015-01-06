@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::MAXMIND::Contributors;
-$Dist::Zilla::Plugin::MAXMIND::Contributors::VERSION = '0.05';
+$Dist::Zilla::Plugin::MAXMIND::Contributors::VERSION = '0.06';
 use v5.10;
 
 use strict;

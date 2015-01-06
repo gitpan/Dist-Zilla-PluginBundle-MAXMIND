@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::MAXMIND;
-# git description: v0.04-2-g9fd7304
-$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.05';
+# git description: v0.05-3-ged1182f
+$Dist::Zilla::PluginBundle::MAXMIND::VERSION = '0.06';
 
 use v5.10;
 
@@ -402,7 +402,7 @@ Dist::Zilla::PluginBundle::MAXMIND - MaxMind's plugin bundle
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =for Pod::Coverage .*
 
@@ -412,7 +412,7 @@ Dave Rolsky <drolsky@maxmind.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Dave Rolsky.
+This software is copyright (c) 2014 - 2015 by MaxMind, Inc..
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

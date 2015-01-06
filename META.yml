@@ -26,7 +26,7 @@ no_index:
 provides:
   Dist::Zilla::PluginBundle::MAXMIND:
     file: lib/Dist/Zilla/PluginBundle/MAXMIND.pm
-    version: '0.05'
+    version: '0.06'
 requires:
   Dist::Zilla: '0'
   Dist::Zilla::File::InMemory: '0'
@@ -81,7 +81,7 @@ requires:
   warnings: '0'
 resources:
   repository: git://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND.git
-version: '0.05'
+version: '0.06'
 x_Dist_Zilla:
   perl:
     version: '5.016003'
@@ -455,7 +455,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: v0.05
+          tag: v0.06
           tag_format: v%v
           tag_message: v%v
           time_zone: local

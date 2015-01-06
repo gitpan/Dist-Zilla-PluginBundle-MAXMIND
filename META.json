@@ -109,7 +109,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::MAXMIND" : {
          "file" : "lib/Dist/Zilla/PluginBundle/MAXMIND.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       }
    },
    "release_status" : "stable",
@@ -120,7 +120,7 @@
          "web" : "https://github.com/maxmind/Dist-Zilla-PluginBundle-MAXMIND"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016003"
@@ -601,7 +601,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "v0.05",
+                  "tag" : "v0.06",
                   "tag_format" : "v%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
